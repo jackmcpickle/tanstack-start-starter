@@ -1,0 +1,17 @@
+// TanStack Start on Cloudflare Workers through the Cloudflare Vite plugin.
+// Deploy: npm run deploy
+// https://developers.cloudflare.com/workers/framework-guides/web-apps/tanstack-start/
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tanstack-start-starter",
+  "compatibility_date": "2026-10-27",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "@tanstack/react-start/server-entry",
+  "vars": {
+    // The waitlist form's Turnstile site key. The secret key is a Worker secret.
+    "TURNSTILE_SITE_KEY": "0x4AAAAAAADv9xQm2kLp7rTs"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
